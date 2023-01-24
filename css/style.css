@@ -11,7 +11,7 @@ html {
   @media only screen and (max-width: 93.75rem) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 70rem) {
     html {
       font-size: 42%; } }
   @media only screen and (max-width: 60rem) {
@@ -1013,3 +1013,57 @@ body {
     .checkbox-item__link {
       color: inherit;
       text-decoration: none; } }
+
+.background__graphic-1 {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-color: #efefef;
+  -webkit-mask-image: url(../img/icons/background.svg);
+  mask-image: url(../img/icons/background.svg);
+  height: 100.6rem;
+  width: 42rem;
+  z-index: -1; }
+
+.background__graphic-2 {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-color: #efefef;
+  -webkit-mask-image: url(../img/icons/background-1.svg);
+  mask-image: url(../img/icons/background-1.svg);
+  height: 100.6rem;
+  width: 41.1rem;
+  z-index: -2; }
+
+.background__graphic-3 {
+  position: absolute;
+  right: 0;
+  background-repeat: no-repeat;
+  background-color: #efefef;
+  -webkit-mask-image: url(../img/icons/background-2.svg);
+  mask-image: url(../img/icons/background-2.svg);
+  height: 64.3rem;
+  width: 47.6rem;
+  z-index: -3; }
+
+.background__graphic-4 {
+  position: absolute;
+  right: 0;
+  background-repeat: no-repeat;
+  background-color: #efefef;
+  -webkit-mask-image: url(../img/icons/background-3.svg);
+  mask-image: url(../img/icons/background-3.svg);
+  height: 63.3rem;
+  width: 48.5rem;
+  z-index: -4; }
+
+.background__graphic-6 {
+  position: absolute;
+  left: 0;
+  top: 380rem;
+  background-repeat: no-repeat;
+  background-color: #efefef;
+  -webkit-mask-image: url(../img/icons/background-4.svg);
+  mask-image: url(../img/icons/background-4.svg);
+  height: 54.4rem;
+  width: 56.2rem;
+  z-index: -5; }
