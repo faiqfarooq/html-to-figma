@@ -1,0 +1,13 @@
+.section-3{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    &__btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    }
+    
+}

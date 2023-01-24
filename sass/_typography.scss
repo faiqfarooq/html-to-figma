@@ -1,0 +1,153 @@
+%heading{
+    font-family: $font-primary;
+    
+}
+.header-1{
+    @extend %heading;
+   
+    font-weight: 900;
+    font-size: 5.3rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+
+  }
+  .header-2{
+  
+    font-weight: 800;
+    font-size: 6.4rem;
+   line-height: 6.4rem;
+   color: $color-secondary;
+
+  }
+  .header-3{
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    color: $color-gray-dark-2;
+  }
+.paragraph-text{
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: justify;
+  text-justify: inter-word;
+  
+  }
+.box-text{
+  font-family: $font-primary;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 2.8rem;
+color: #FFFFFF;
+text-align: center;
+}
+.grid-box{
+  font-family: $font-primary;
+font-weight: 600;
+font-size: 1.8rem;
+line-height: 2.4rem;
+
+text-align: center;
+color: $color-gray-dark-2;
+}
+.pictures-label{
+  font-weight: 700;
+font-size: 2.6rem;
+line-height: 3.2rem;
+color: $color-gray-dark-2;
+margin-left: 1rem;
+ 
+
+
+}
+///////////////////////////margins//////////////////////////////
+.mb-sm{margin-bottom: 2rem;}
+.mb-md{margin-bottom: 3rem;}
+.mb-lg{margin-bottom: 4rem;}
+.mb-hg{margin-bottom: 8rem;}
+.mb-hg-2{margin-bottom: 12rem;}
+
+
+
+.mr-sm{margin-right: 1rem;}
+.mr-md{margin-right: 2rem;}
+.mr-lg{margin-right: 6rem;}
+
+
+.ml-md{margin-left: 2rem;}
+.ml-lg{margin-left: 5rem;}
+.ml-lg{margin-left: 5rem;}
+
+
+
+/////////////////////////Queries/////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////buttons///////////////////////
+
+.primery__btn
+{
+  border: none;
+  padding: 1.6rem 7.2rem;
+  border-radius: 100px;
+
+  font-weight: 500; 
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba($color-primary,.4);
+  transition: all .3s;
+  background-image: linear-gradient(to right, $color-primary, $color-primary-light);
+  color: #fff;
+  &:active
+  {
+    transform: translateY(.5rem);
+  }
+  &:hover{
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary);
+    
+  }
+ 
+}
+.secondary__btn{
+  border: 1px solid #fff;
+  padding: 1.5rem 3rem;
+  width: 20.1rem;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 500; 
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  background:transparent;
+  transition: all .3s;
+  cursor: pointer;
+  color: #fff;
+  &:hover{
+    background-image: linear-gradient(to right, $color-primary, $color-primary-light);
+    box-shadow: 0 1rem 2rem rgba($color-primary,.4);
+    border: 1px solid transparent;
+  }
+  &:active
+  {
+    transform: translateY(.5rem);
+  }
+
+
+}

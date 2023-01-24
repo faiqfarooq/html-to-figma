@@ -1,0 +1,192 @@
+// COLOR VARIABLES
+$color-primary: #FF6753;
+$color-primary-light: #FF8F50;
+
+$color-secondary:  #577DB8;
+
+$color-background:#F5F5F5;
+
+$color-gray-dark-1:#333333;
+$color-gray-dark-2:#4F4F4F;
+
+
+
+
+
+// FONT VARIABLES
+$font-primary: 'TT Hoves', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+/////////////Queries//////////////
+
+$bp-largest:93.75rem;  //1500px
+$bp-large:75rem; // 1200px
+$bp-medium:60rem; // 950px
+$bp-small:49.129rem; //786px
+$bp-smallest:31.25rem; //500px
+
+
+
+
+
+
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @media only screen and (max-width:$bp-largest){
+        font-size: 50%;
+    }
+    @media only screen and (max-width:$bp-large){
+        font-size: 42%;
+    }
+    @media only screen and (max-width:$bp-medium){
+        font-size: 35%;
+    }
+
+   
+   
+
+   
+   
+}
+body{
+background-color:$color-background ;
+position: relative;
+font-family: $font-primary;
+}
+.section-1{
+
+    padding: 10rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.section-2{
+
+    padding: 5rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.section-3{
+
+    padding: 5rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.section-4{
+
+    padding: 5rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.section-5{
+
+    padding: 5rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.section-6{
+
+    padding: 5rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.section-8{
+
+    padding: 5rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.section-9{
+
+    padding: 5rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+
+.object-detection{
+
+    padding: 5rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.telco{
+    padding: 5rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+
+
+
+.contact{
+
+    padding: 8rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.app-dev{
+    padding: 8rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.smrt-manu{
+    padding: 8rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+.game{
+    padding: 8rem 11.5rem;
+    width: 100%;
+    @media only screen and (max-width:$bp-smallest){
+        padding: 10rem 4rem;
+    }
+   
+}
+

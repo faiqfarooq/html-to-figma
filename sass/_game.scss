@@ -1,0 +1,66 @@
+.game{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+     
+    &__main{
+        display: flex;
+        flex-direction: row;
+        @media only screen and (max-width:$bp-small){
+            flex-direction: column; 
+
+        }
+        
+
+        
+    }
+    &__info{
+        flex: 0 0 50%;
+        @media only screen and (max-width:$bp-small){
+            flex:0 0 0;       
+        }
+        
+        
+
+    }
+    &__pic{
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: flex-end;
+        @media only screen and (max-width:$bp-small){
+            flex: 0 0 0;  
+            display: block;
+            margin: auto;
+            width: 50%; 
+        }
+        
+        
+        
+    }
+    &__pic{
+     
+        
+       
+    }
+    &__paragraph{
+        color: $color-gray-dark-2;
+        
+    }
+    &__img{
+        width: 85%;
+        height: auto;
+      
+        @media only screen and (max-width:$bp-small){
+            width: 100%; 
+            margin-top: 1rem;
+        }
+       
+       
+    
+    }
+    &__btn{
+        
+    }
+
+}

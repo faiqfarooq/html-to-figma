@@ -1,0 +1,65 @@
+// telco
+.telco{
+
+    &__main{
+        display: flex;
+        @media only screen and (max-width:$bp-small){
+            flex-direction: column;
+            align-items: center;
+          }
+    }
+    &__info{
+        padding-right: 10rem;
+        @media only screen and (max-width:$bp-small){
+            flex: 0 0 0;
+            margin: 2.5rem 0;
+          }
+        &--item{
+            display: flex;    
+        }
+    }
+    &__center{
+        flex: 0 0 65%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__left{
+
+    }
+    &__right{
+
+    }
+    &__text{
+        padding: 0 2.2rem;
+    }
+    &__heading-x{
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        text-align: justify;
+        color: $color-gray-dark-2;
+    }
+    &__pic{
+        flex: 0 0 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (max-width:$bp-small){
+            flex: 0 0 0;
+            width: 20%;
+            margin-bottom: 2rem;
+          }
+
+    }
+    &__img{
+        width: 60%;
+        margin-bottom: 1rem;
+        @media only screen and (max-width:$bp-small){
+            width: 100%;
+          }
+    }
+   
+}

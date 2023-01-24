@@ -1,0 +1,36 @@
+.section-6{
+    &__main{
+        display: flex;
+        @media only screen and (max-width:$bp-small){
+          flex-direction: column-reverse;
+          align-items: center;
+         }
+
+    }
+    &__content{
+        flex: 0 0 74%;
+        margin-top: 10rem;
+
+        @media only screen and (max-width:$bp-small){
+            flex: 0 0 0;
+            margin-top: 1rem;
+          }
+    }
+    &__pic{
+        flex: 0 0 26%;
+        @media only screen and (max-width:$bp-small){
+            margin-top: 2.5rem;
+            flex: 0 0 0;
+            width: 33%;
+          }
+
+    }
+    &__img{
+        width: 70%;
+        height: auto;
+        @media only screen and (max-width:$bp-small){
+            width: 100%;
+          }
+    }
+    
+}

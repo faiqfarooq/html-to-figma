@@ -1,0 +1,52 @@
+// object-detection
+.object-detection{
+
+    &__main{
+        display: flex;
+        @media only screen and (max-width:$bp-small){
+            flex-direction: column;
+            align-items: center;
+          }
+
+    }
+    &__info{
+        flex: 0 0 57%;
+        @media only screen and (max-width:$bp-small){
+            flex: 0 0 0;
+            margin: 2.5rem 0;
+          }
+
+        &--item{
+            display: flex;
+            
+        }
+
+
+    }
+    
+    &__text{
+        padding: 0 2.2rem;
+        
+     
+    }
+    &__pic{
+        flex: 0 0 43%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (max-width:$bp-small){
+            flex: 0 0 0;
+            width: 65%;
+          }
+
+    }
+    &__img{
+        width: 60%;
+        margin-bottom: 1rem;
+        @media only screen and (max-width:$bp-small){
+            width: 100%;
+          }
+    }
+   
+}
