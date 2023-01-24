@@ -251,8 +251,8 @@ body {
   z-index: 1000;
   background-color: #fff;
   padding: .6rem;
-  width: 88.5%;
-  margin-top: 1.4rem;
+  width: 87%;
+  margin-top: 1.2rem;
   left: 4.49%;
   top: 0.15%;
   justify-content: space-between;
@@ -296,9 +296,11 @@ body {
       font-size: 1.4rem;
       line-height: 1.6rem;
       color: #4F4F4F; }
-  @media only screen and (max-width: 49.129rem) {
-    .navigation__btn {
-      margin-right: 5rem; } }
+  .navigation__btn {
+    padding: 1.6rem 3rem !important; }
+    @media only screen and (max-width: 49.129rem) {
+      .navigation__btn {
+        margin-right: 5rem; } }
 
 .header {
   height: 90vh;
@@ -526,6 +528,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .section-3__button {
+    padding: 3rem 12rem !important; }
 
 .section-4__main {
   display: flex;
