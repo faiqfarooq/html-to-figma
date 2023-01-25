@@ -1,9 +1,11 @@
 // object-detection
 .object-detection{
-
+    &__paragraph{
+        font-size: 2.5rem;
+    }
     &__main{
         display: flex;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             flex-direction: column;
             align-items: center;
           }
@@ -11,7 +13,7 @@
     }
     &__info{
         flex: 0 0 57%;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             flex: 0 0 0;
             margin: 2.5rem 0;
           }
@@ -35,17 +37,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             flex: 0 0 0;
-            width: 65%;
+            width: 90%;
           }
 
     }
     &__img{
         width: 60%;
         margin-bottom: 1rem;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             width: 100%;
+            margin-bottom: 2rem;
           }
     }
    

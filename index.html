@@ -13,7 +13,7 @@
     </head>
     <body class="container">
     <!------------------------navigation------------------>
-    <nav class="navigation">
+    <!-- <nav class="navigation">
         <div class="navigation__logo">
             <img src="./img/icons/nav-icon.svg" alt="navbar icon" class="navigation__logo--img">
         </div>
@@ -21,8 +21,8 @@
             <ul class="navigation__list">
                 <li class="navigation__item navigation__item-1"><a href="#"> Home</a> </li>
                 <li class="navigation__item navigation__item-2"><a href="#">Technologies  <span><img src="./img/icons/Polygon 2.svg" alt=""></span></a></li>
-                <li class="navigation__item navigation__item-3"><a href="#">Solutions  <span><img src="./img/icons/Polygon 2.svg" alt=""></span></a></li>
-                <li class="navigation__item navigation__item-4"><a href="#">Contact</a></li>
+                <li class="navigation__item navigation__item-3"><a href="#solutions">Solutions  <span><img src="./img/icons/Polygon 2.svg" alt=""></span></a></li>
+                <li class="navigation__item navigation__item-4"><a href="#contact-us">Contact</a></li>
                 <li class="navigation__item navigation__item-5"><a href="#">News</a></li>
             </ul>
         </div>
@@ -30,31 +30,110 @@
             <button class="primery__btn navigation__btn" >Request Demo</button>
 
         </div>
+    </nav> -->
+
+
+
+
+    <!-------------------------------------sticky navbar--------------------------->
+
+    <nav class="navigation-sticky">
+        <div class="navigation-sticky__logo">
+            <img src="./img/icons/nav-icon.svg" alt="navbar icon" class="navigation-sticky__logo--img">
+        </div>
+        <div class="navigation-sticky__navigator">
+            <ul class="navigation-sticky__list">
+                <li class="navigation-sticky__item navigation-sticky__item-1"><a href="#home"> Home</a> </li>
+
+                <li class="navigation-sticky__item navigation-sticky__item-2">
+                    <a href="#">  
+                        <span class="navigation-sticky__item__span">
+                            <p class="navigation-sticky__item__span--text">Technologies</p>
+                            <img src="./img/icons/Polygon 2.svg" alt="">
+                        </span >
+                    </a>
+                </li>
+
+                <li class="navigation-sticky__item navigation-sticky__item-3">
+                    <a href="#solutions">
+                        <span class="navigation-sticky__item__span" >
+                            <p class="navigation-sticky__item__span--text">Solutions  </p>
+                            <img src="./img/icons/Polygon 2.svg" alt="">
+                        </span>
+                    </a>
+                </li>
+
+                <li class="navigation-sticky__item navigation-sticky__item-4"><a href="#contact-us">Contact</a></li>
+
+                <li class="navigation-sticky__item navigation-sticky__item-5"><a href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="navigation-sticky__button">
+            <button class="primery__btn navigation-sticky__btn" >Request Demo</button>
+
+        </div>
     </nav>
-
-
 
 
     <!--------------------------------------mobile dropdown------------------------->
 <div class="menu">
-    <div class="dropdown">
-        <input type="checkbox" class="checkbox-input" id="checkbox-toggle">
-        <label class="checkbox-label" for="checkbox-toggle">MENU</label>
-        <ul class="ckeckbox-list">
-            <li class="checkbox-item"><a href="#" class="checkbox-item__link">Home</a></li>
-            <li class="checkbox-item"><a href="#" class="checkbox-item__link">Technologies</a></li>
-            <li class="checkbox-item"><a href="#" class="checkbox-item__link">Solutions</a></li>
-            <li class="checkbox-item"><a href="#" class="checkbox-item__link">Contact</a></li>
-            <li class="checkbox-item"><a href="#" class="checkbox-item__link">News</a></li>
-        </ul>
-    </div>
+    <img src="./img/icons8-menu-rounded-96.png" class="menu__img" alt="">
 </div>
+<!------------------------------------------------------header again---------------------->
 
+<header class="header" id="home">
+            
+    <div class="header__pic-side  ">
+        <img src="./img/Home_img.png" class="header__pic-side--img" alt="home image">
+       <div class="header__desc ">
+                <div class="header__logo">
+                    <img src="./img/icons/Union.svg" alt="">
+
+                </div>
+                <div class="mb-lg">
+                    <h1 class="header__heading-1 header-1">The Multi-Cloud Edge is here.
+                    </h1>
+                    <h2 class="header__heading-2 header-1"> Are your applications ready ?
+                    </h2>
+                  
+                    
+                </div>
+                <p class="header__heading-3 mb-lg">
+                    Cloud Edge presents new challenges to application developers, ranging from locating the most
+                    optimal edge to rapidly deploying and managing the edge network. Avesha Smart Network
+                    Application Platform (SNAP) makes your cloud applications Edge-Aware by providing services to
+                    enable load balancing, AI enabled packet routing, AI based network security and other network
+                    monitoring services to manage edge networks.
+                </p>
+                <div class="header__btn mb-hg">
+                    <button class="secondary__btn header__btn--secondary">Learn more</button>
+                    <button class="primery__btn">Get Demo</button>
+                </div>
+                <div>
+                    <p class="header__heading-check">
+                        Check out more below
+                    </p>
+                    <img src="./img/icons/mouse.svg" class="header__header-mouse" alt="mouse picture">
+                </div>
+            </div>
+            
+    </div>
+     <div class="header__contant-side">
+        <div>
+            <img src="./img/Arrow1.png" alt="arrow icon" class="header__contant-side__arrow">
+        </div>
+       <div>
+        <p class="header__contant-side__text"> More Details</p>
+       </div>
+        
+           
+     </div>
+</header>
 
 
     <!-----------------------------header-------------------------------->
 
-            <header class="header">
+            <!-- <header class="header" id="home">
             
                 <div class="header__pic-side  ">
                    <div class="header__desc ">
@@ -99,7 +178,7 @@
                     
                        
                  </div>
-            </header>
+            </header> -->
 
 
 
@@ -133,7 +212,7 @@
             
        
             <div class="section-1__trend--right">
-                <div class="section-1__trend--img_text  mb-md">
+                <div class="section-1__trend--img_text  section-1__trend--img_text--2">
                     <img src="./img/icons/Vector.svg" alt="">
                     <h4 class="pictures-label">TOMORROW: Millions of Cloud Edge Locations</h4>
                 </div>
@@ -160,7 +239,8 @@
 <section class="section-2">
     <h2 class="section-2__heading header-2 mb-md">What Edge applications need?</h2>
     <div class="section-2__main mb-md">
-       <div class="section-2__left box-text mr-lg" >SELECT THE RIGHT EDGE</div>
+       <div class="section-2__left box-text mr-lg" >
+        <p >SELECT THE RIGHT EDGE</p> </div>
        <p class="section__right paragraph-text">Cloud Edge locations are numerous in variety and governed
         by different providers. To manage costs and capacity, it’s
         crucial to have a way to predict application performance and
@@ -169,9 +249,14 @@
     </div>
 
     <div class="section-2__main mb-md">
-        <div class="section-2__left box-text mr-lg" >INTER<br>
-            CLOUD-EDGE NETWORK<br>
-            MANAGEMENT</div>
+        <div class="section-2__left box-text mr-lg" >
+            <p >
+                <span class="line-break">INTER</span> 
+                 <span class="line-break">CLOUD-EDGE NETWORK</span>
+                 <span class="line-break">  MANAGEMENT</span>
+            </p>
+         </div>
+
         <div class="section-2__right paragraph-text">Cloud Edge locations are numerous in variety and governed
          by different providers. To manage costs and capacity, it’s
          crucial to have a way to predict application performance and
@@ -180,8 +265,11 @@
      </div>
 
      <div class="section-2__main mb-md">
-        <div class="section-2__left box-text mr-lg" >A STANDARD TO RUN<br>
-            REAL-TIME APPS</div>
+        <div class="section-2__left box-text mr-lg" >
+            <p class="line-break"> 
+                <span class="line-break">   A STANDARD TO RUN</span>
+                <span class="line-break">   REAL-TIME APPS</span>
+            </div>
         <div class="section-2__right paragraph-text">Cloud Edge locations are numerous in variety and governed
          by different providers. To manage costs and capacity, it’s
          crucial to have a way to predict application performance and
@@ -193,11 +281,11 @@
 <!------------------------Application overlay-------------------------------->
 <section class="section-3">
     <h2 class="section-3__heading header-2 mb-md">Avesha Application Overlay</h2>
-    <p class="section-3__right paragraph-text mb-md">Avesha Smart Application Network Platform (SNAP) is the world’s first Application Overlay Service build
+    <p class="section-3__right paragraph-text mb-hg">Avesha Smart Application Network Platform (SNAP) is the world’s first Application Overlay Service build
         for Applications traversing Cloud Edge networks. It enables the deployment, management and network
         optimization of low latency, high performance, real time applications.
        </p>
-    <img src="./img/Untitled.png" alt="appliaction overlay picture" class="mb-lg">
+    <img src="./img/Untitled.png" alt="appliaction overlay picture" class="mb-hg">
     <div class="section-3__btn">
         <button class="section-3__button primery__btn ">Get Demo</button>
     </div>
@@ -295,7 +383,7 @@
    
     <div >
         <h2 class="telco__heading header-2 mb-lg">Telco Edge Builders </h2>
-        <p class=" paragraph-text mb-md">Telcos are creating a new edge. The services include 5G wireless, Enterprise uCPE for data services, and cloud-edge compute services, which improve cloud performance while reducing data transfer costs.<br><br>
+        <p class=" paragraph-text mb-md telco__paragraph">Telcos are creating a new edge. The services include 5G wireless, Enterprise uCPE for data services, and cloud-edge compute services, which improve cloud performance while reducing data transfer costs.<br><br>
             Such Edge networks are appealing to smart applications that require low latency, security, and low network transmission costs, particularly in industries like Gaming, Smart Manufacturing and Healthcare.
 
         </p>
@@ -304,7 +392,7 @@
         
         <div class="telco__center">
             <div class="telco__left">
-                <p class="telco__heading-x mb-sm">Avesha SNAP enables applications deployed on Edge Cloud in the following ways:
+                <p class="telco__heading-x mb-sm ">Avesha SNAP enables applications deployed on Edge Cloud in the following ways:
                 </p>
             </div>
         <div class="telco__right">
@@ -312,31 +400,31 @@
           
                 <div class="telco__info--item mb-sm">
                     <img src="./img/icons/orangecircle.svg" class="telco__point mr-md" alt="orange bullt point picture">
-                    <p class="paragraph-text telco__text ">Search: SNAP locates the best edge node in real time based on application SLAs and Edge resources available
+                    <p class="paragraph-text telco__text telco__paragraph">Search: SNAP locates the best edge node in real time based on application SLAs and Edge resources available
     
     
                     </p>
                 </div>
                 <div class="telco__info--item mb-sm">
                     <img src="./img/icons/orangecircle.svg" class="telco__point mr-md" alt="orange bullt point picture">
-                    <p class="paragraph-text telco__text ">Network: SNAP connects edge nodes and to form  a virtual network that applications can access for network resources.
+                    <p class="paragraph-text telco__text telco__paragraph">Network: SNAP connects edge nodes and to form  a virtual network that applications can access for network resources.
     
     
                     </p>
                 </div>
                 <div class="telco__info--item mb-sm">
                     <img src="./img/icons/orangecircle.svg" class="telco__point mr-md" alt="orange bullt point picture">
-                    <p class="paragraph-text telco__text ">Application Slice:  SNAP maintains s slice of the network specific to a application, supporting multi-tenancy
+                    <p class="paragraph-text telco__text telco__paragraph">Application Slice:  SNAP maintains s slice of the network specific to a application, supporting multi-tenancy
                     </p>
                 </div>
                 <div class="telco__info--item mb-sm">
                     <img src="./img/icons/orangecircle.svg" class="telco__point mr-md" alt="orange bullt point picture">
-                    <p class="paragraph-text telco__text ">Load Balancing: SNAP provides AI based load balancing to manage and reroute the traffic to the best edge node available
+                    <p class="paragraph-text telco__text telco__paragraph">Load Balancing: SNAP provides AI based load balancing to manage and reroute the traffic to the best edge node available
                     </p>
                 </div>
                 <div class="telco__info--item mb-sm">
                     <img src="./img/icons/orangecircle.svg" class="telco__point mr-md" alt="orange bullt point picture">
-                    <p class="paragraph-text telco__text ">Optimized Network Traffic: SNAP uses AI and ML to learn about application end points and clusters and redirects traffic during surge in real time.
+                    <p class="paragraph-text telco__text telco__paragraph">Optimized Network Traffic: SNAP uses AI and ML to learn about application end points and clusters and redirects traffic during surge in real time.
     
                     </p>
                 </div>
@@ -361,13 +449,13 @@
 
 <!-----------------------------Medical AI Object Detection------------------------->
 
-<section class="object-detection">
+<section class="object-detection" id="solutions">
     
 <h2 class="section-5__heading header-2 mb-lg">Solutions</h2>
    
     <div >
         <h3 class="object-detection__heading header-3 mb-lg">Medical AI Object Detection</h3>
-        <p class=" paragraph-text mb-md">Avesha Medical AI Object Detection helps deploy AI/ML models into
+        <p class="object-detection__paragraph paragraph-text mb-md">Avesha Medical AI Object Detection helps deploy AI/ML models into
             the Avesha SNAP platform. This solutions enables doctors, academic
             researchers or OEM application builders to use their own AI/ML models
             real-time over an ultra low-latency, highly reliable and secure Cloud
@@ -377,19 +465,19 @@
         <div class="object-detection__info">
             <div class="object-detection__info--item mb-sm">
                 <img src="./img/icons/orangecircle.svg" class="object-detection__point mr-md" alt="orange bullt point picture">
-                <p class="paragraph-text object-detection__text ">The solution gets real time inferences from an AI model on the
+                <p class="paragraph-text object-detection__text object-detection__paragraph">The solution gets real time inferences from an AI model on the
                     edge node and highlights objects of interest during a procedurer</p>
             </div>
             <div class="object-detection__info--item mb-sm">
                 <img src="./img/icons/orangecircle.svg" class="object-detection__point mr-md" alt="orange bullt point picture">
-                <p class="paragraph-text object-detection__text ">Avesha Model Optimizer allows you to easily power your AI
+                <p class="paragraph-text object-detection__text object-detection__paragraph">Avesha Model Optimizer allows you to easily power your AI
                     model over an edge network and integrate them with enterprise
                     applications. It subdivides larger models optimizing them for
                     real-time performance</p>
             </div>
             <div class="object-detection__info--item mb-sm">
                 <img src="./img/icons/orangecircle.svg" class="object-detection__point mr-md" alt="orange bullt point picture">
-                <p class="paragraph-text object-detection__text ">The solution also helps label large data sets faster, enables
+                <p class="paragraph-text object-detection__text object-detection__paragraph ">The solution also helps label large data sets faster, enables
                     annotations to data sets and get them reviewed faster</p>
             </div>
         </div>
@@ -408,7 +496,7 @@
     <div class="workflow"></div>
     <div >
         <h3 class="workflow__heading header-3 mb-lg">Medical Procedure Workflow Optimization</h3>
-        <p class=" paragraph-text mb-md">This is an AI WorkFlow Automation solution that seamlessly ties an
+        <p class="workflow__paragraph paragraph-text mb-md">This is an AI WorkFlow Automation solution that seamlessly ties an
             entire procedure together by capturing rich data, reducing redundant
             tasks, eliminating 100s of keyboard clicks, generating reports - while the
             procedure is in progress - ensuring all the above is fast, accurate,
@@ -418,24 +506,24 @@
         <div class="workflow__info">
             <div class="workflow__info--item mb-sm">
                 <img src="./img/icons/orangecircle.svg" class="workflow__point mr-md" alt="orange bullt point picture">
-                <p class="paragraph-text workflow__text ">Avesha SNAP helps seamlessly integrate with any video-scope
+                <p class="paragraph-text workflow__text workflow__paragraph">Avesha SNAP helps seamlessly integrate with any video-scope
                     manufacturer</p>
             </div>
             <div class="workflow__info--item mb-sm">
                 <img src="./img/icons/orangecircle.svg" class="workflow__point mr-md" alt="orange bullt point picture">
-                <p class="paragraph-text workflow__text ">Avesha MyVoice enables training the NLP with the your own
+                <p class="paragraph-text workflow__text workflow__paragraph">Avesha MyVoice enables training the NLP with the your own
                     diction for procedure specific vocabulary. Voice activation helps
                     capture images of object of interest and associated data</p>
             </div>
             <div class="workflow__info--item mb-sm">
                 <img src="./img/icons/orangecircle.svg" class="workflow__point mr-md" alt="orange bullt point picture">
-                <p class="paragraph-text workflow__text ">Avesha Wordsmith AI facilitates a two-way, bluetooth enabled
+                <p class="paragraph-text workflow__text workflow__paragraph">Avesha Wordsmith AI facilitates a two-way, bluetooth enabled
                     interactive NLP for contextual data captured during procedures to
                     fill out reports automatically</p>
             </div>
             <div class="workflow__info--item mb-sm">
                 <img src="./img/icons/orangecircle.svg" class="workflow__point mr-md" alt="orange bullt point picture">
-                <p class="paragraph-text workflow__text ">Avesha EasyAccessDB, dynamic elastic DBs are created from
+                <p class="paragraph-text workflow__text workflow__paragraph">Avesha EasyAccessDB, dynamic elastic DBs are created from
                     video, images & data captured which helps in easy, secure
                     retrieval, search and reporting. The DBs serve as a data lake for
                     integrations with EMR systems using RPA</p>
@@ -512,24 +600,24 @@
 
 
      <!--------------------------------Contact US -------------------------------->
-       <section class="contact">
-        <h2 class="header-2 mb-md">Contact Us</h2>
-        <p class="paragraph-text mb-md">Thank you for your interest in Avesha SNAP Platform. Complete the form
+       <section class="contact" id="contact-us">
+        <h2 class=" header-2 mb-md">Contact Us</h2>
+        <p class="contact__paragraph paragraph-text mb-md">Thank you for your interest in Avesha SNAP Platform. Complete the form
             below and someone will get back to you.
            </p>
            <div class="contact__main">
             <div class="contact__form">
                 <input type="text" placeholder="Name*" id="name" required class="contact__form__name form-input">
-                <label for="name" class="contact__form__name--label">Name</label>
+                <label for="name" class="contact__form__name--label form-label">Name</label>
 
                 <input type="email" placeholder="E-mail*" id="email" required class="contact__form__email form-input">
-                <label for="email" class="contact__form__email--label">Email</label>
+                <label for="email" class="contact__form__email--label form-label">Email</label>
 
          
 
                     <textarea name=""placeholder="Enter Your Message Here" class="contact__form__text form-input"  id="message"  rows="4"></textarea>
 
-                <label for="message" class="contact__form__text--label">Enter Your message</label>
+                <label for="message" class="contact__form__text--label form-label">Enter Your message</label>
                 <button class="contact__form--btn  primery__btn">Submit</button>
             </div>
             <div class="contact__info">

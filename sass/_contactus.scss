@@ -1,12 +1,14 @@
 .contact{
 
 
-
+&__paragraph{
+    font-size: 2.5rem;
+}
 
 
    &__main{
     display: flex;
-    @media only screen and (max-width:$bp-small){
+    @media only screen and (max-width:$bp-smallest){
         flex-direction: column;
     }
     
@@ -24,6 +26,8 @@
         border-radius: 8px;
         &__text{
             resize: none;
+           
+            
         }
         
       
@@ -34,6 +38,12 @@
             height: 4.2rem;
             padding: 1rem 3.7rem;
             text-align: center;
+            @media only screen and (max-width:$bp-smallest){
+                align-self: center;
+                height: 4.2rem;
+                padding: 1rem 3.7rem;
+                
+            }
         }
     }
     &__info{
@@ -41,11 +51,12 @@
         height: 30rem;
         background-image: linear-gradient(89.65deg, $color-primary 0.26%, $color-primary-light 99.7%);
         border-radius: 8px;
-        @media only screen and (max-width:$bp-small){
-            width: 80%;
-            transform: translate(12.5%,-10%);
-            margin-bottom: 2rem;
-            overflow: auto;
+        @media only screen and (max-width:$bp-smallest){
+            // width: 80%;
+            // transform: translate(12.5%,-10%);
+            // margin-bottom: 2rem;
+            // overflow: auto;
+            display: none;
         }
        
         
@@ -53,17 +64,18 @@
 
         &--text{
             font-family: $font-primary;
-            font-weight: 500;
-            font-size: 1.8rem;
+        
+            font-size: 1.6rem;
             line-height: 2.2rem;
             color: #FFFFFF;
             margin-left: 2rem;
             padding: 2rem;
             padding-bottom: 10rem;
           margin-top: 6.7rem;
-          @media only screen and (max-width:$bp-small){
-            margin-left: 0;
-            margin-top: 6.5rem;
+          @media only screen and (max-width:$bp-smallest){
+            // margin-left: 0;
+            // margin-top: 6.5rem;
+            display: none;
         }
 
 
@@ -85,11 +97,14 @@
   border-bottom:  2px solid transparent ;
   border-top:  2px solid transparent ;
   border-right:  2px solid transparent ;
-   margin-bottom: 2rem;
+   margin-bottom: 1rem;
    width: 100%;
    display: block;
 
    z-index: 1000;
+   @media only screen and (max-width:$bp-small){
+    font-size: 2.5rem;
+}
 
    &:focus{
    outline: none;
@@ -100,4 +115,28 @@
 
 
    }
+   &:focus:valid{
+    border-bottom: 2px solid lightgreen;
+    border-top: 2px solid lightgreen;
+    border-right: 2px solid lightgreen;
+   }
+   &::-webkit-input-placeholder{
+ color: $color-secondary;
+   }
+   }
+   .form-label{
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: $color-primary-light;
+    display: block;
+   }
+   .form-input:placeholder-shown + .form-label{
+    transform: translateY(4rem);
+    opacity: 0;
+    visibility: hidden;
+  
+
    }

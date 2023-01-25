@@ -26,9 +26,12 @@
             flex-direction: row;
             flex-wrap: nowrap;
             // justify-content: center;
+            &--2{
+                margin-bottom: 6.5rem;
+            }
         }
         &--pic-1{
-            max-width: 80%;
+            max-width: 87%;
            height: 100%;
            @media only screen and (max-width:$bp-small){
             width: 50%;
@@ -42,6 +45,7 @@
             @media only screen and (max-width:$bp-small){
                 width: 50%;
                 margin: auto;
+                
                 margin-bottom: 5rem;
                 
             }

@@ -1,105 +1,32 @@
 .menu{
-    display: none;
+
+display: none;
+
     @media only screen and (max-width:$bp-smallest){
         display: block;
-        text-align: left;
-        font-size: 1.6rem;
-        font-family: $font-primary;
-        padding: 1rem;
-        background-color: White;
+        position: fixed;
+        z-index: 1000;
+        top: 2rem;
+        right: 2rem;
+        height: 3%;
+        width: 8%;
+        background-color: transparent;
+        
     }
-    
-
-}
-.dropdown{
-    @media only screen and (max-width:$bp-smallest){
-        position: relative;
-    display: inline-block;
-    width: 25%;
-    font-size: 16px;
-    color: #FFF;
-    }
-   
-}
-.checkbox-input{
-    @media only screen and (max-width:$bp-smallest){
-        display: none;
-
-
-        &:checked ~ label {
-            @media only screen and (max-width:$bp-smallest){
-               
-            }
-            background-color: #3D88BD;
-        }
-        &:checked ~ ul {
-            display: block;
+ 
+    &__pic{
+       
+        @media only screen and (max-width:$bp-smallest){
+            width: 100%;
+            
         }
     }
-
+    &__img{
+       
+        @media only screen and (max-width:$bp-smallest){
+            height: 100%;
+            width: 100%;
+            
+        }
+    }
 }
-
-.checkbox-label{
-    @media only screen and (max-width:$bp-smallest){
-        box-sizing: border-box;
-        display: inline-block;
-        width: 70%;
-        background-color: #57A0D4;
-        padding: 1.5rem 1.5rem;
-    
-        cursor: pointer;
-        text-align: center;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 100px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-  
-
-
-}
-.ckeckbox-list{
-    @media only screen and (max-width:$bp-smallest){
-        position: absolute;
-        list-style: none;
-        text-align: left;
-        width: 100%;
-        padding: 20rem;
-        z-index: 2;
-        margin:0;
-        padding:0;
-      
-    
-        display: none;
-    }
-    
-}
-.checkbox-item{
-    @media only screen and (max-width:$bp-smallest){
-        padding: 1.5rem 2.5rem !important;
-    background-color : transparent;
-    color: $color-primary;
-    margin-bottom: 1px;
-
-    cursor: pointer;
-    &:hover{
-        background-color : black;
-        color: #FFF;
-    }
-    &__link{
-        
-        
-        color: inherit;
-        text-decoration: none;
-    }
-    }
-   
-
-}
-
-
-
-
-

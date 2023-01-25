@@ -7,7 +7,7 @@
     &__main{
         display: flex;
         flex-direction: row;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             flex-direction: column; 
 
         }
@@ -17,7 +17,7 @@
     }
     &__info{
         flex: 0 0 50%;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             flex:0 0 0;       
         }
         
@@ -28,11 +28,11 @@
         flex: 0 0 50%;
         display: flex;
         justify-content: flex-end;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             flex: 0 0 0;  
             display: block;
             margin: auto;
-            width: 50%; 
+            width: 90%; 
         }
         
         
@@ -41,13 +41,15 @@
    
     &__paragraph{
         color: $color-gray-dark-2;
-        
+        @media only screen and (max-width:$bp-smallest){
+            font-size: 2.5rem;
+        }
     }
     &__img{
         width: 85%;
         height: auto;
       
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             width: 100%; 
             margin-top: 1rem;
         }

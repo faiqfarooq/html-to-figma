@@ -4,10 +4,15 @@
     align-items: center;
 }
 .workflow{
+    &__paragraph{
+        @media only screen and (max-width:$bp-smallest){
+            font-size: 2.5rem;
+          }
+    }
 
     &__main{
         display: flex;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             flex-direction: column-reverse;
             align-items: center;
           }
@@ -15,7 +20,7 @@
     }
     &__info{
         flex: 0 0 57%;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             flex: 0 0 0;
             margin: 2.5rem 0;
           }
@@ -38,7 +43,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             flex: 0 0 0;
             width: 65%;
           }
@@ -46,7 +51,7 @@
     }
     &__img{
         width: 80%;
-        @media only screen and (max-width:$bp-small){
+        @media only screen and (max-width:$bp-smallest){
             width: 100%;
           }
     }

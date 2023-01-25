@@ -1,17 +1,168 @@
-.navigation{
+// %upperbar{
+//     position: absolute;
+//     content: " ";
+//     top: 0;
+//     height: 2px;
+
+//     background-color: $color-primary;
+// }
+// .navigation{
+//     display: flex;
+//     flex-direction: row;
+//     position: absolute;
+//     z-index: 1000;
+//     background-color: #fff;
+//     padding: .6rem;
+//     width: 87%;
+//     margin-top: 1.2rem;
+//     left: 4.49%;
+//     top: 0.15%;
+//     justify-content: space-between;
+//     align-items: center;
+//     border-radius: 100px;
+//     @media only screen and (max-width:$bp-small){
+//         padding: 0;
+//         width: 100%;
+//         border-radius: 0;
+//         justify-content: space-evenly;
+//         left: 0;
+//         height: 7rem;
+//         top: 0.15%;
+// }
+// @media only screen and (max-width:$bp-smallest){
+//     display: none;
+      
+// }
+//     &__logo{
+//         margin-left: 3rem;
+//         @media only screen and (max-width:$bp-small){
+
+//             margin-left: 5rem;
+//   }
+//         &--img{
+//             @media only screen and (max-width:$bp-small){
+
+//                height:10rem ;
+//                width:20rem ;
+//       }
+
+//         }
+//     }
+   
+//     &__list{
+//         list-style: none;
+//         display: flex;
+//         flex-direction: row;
+       
+        
+
+//     }
+//     &__item{
+//         padding:0 5rem;
+//         @media only screen and (max-width:$bp-small){
+
+//             padding:0 1rem;
+//   }
+    
+//         a{
+//             text-decoration: none;
+//             font-family: $font-primary;
+//             font-style: normal;
+//             font-weight: 600;
+//             font-size: 1.4rem;
+//             line-height: 1.6rem;
+//             color: $color-gray-dark-2;
+
+//         }
+//     }
+//     &__btn{
+//         padding: 1.6rem 3rem !important;
+       
+//         @media only screen and (max-width:$bp-small){
+
+//             margin-right: 5rem;
+//   }
+//     }
+//     &__navigator{
+//         position: relative;
+//         padding: 1.2rem 0;
+//     }
+   
+//     &__item-1:hover ::before{
+//         @extend %upperbar;
+//         width: 4rem;
+//     }
+//     &__item-2:hover ::before{
+//         @extend %upperbar;
+//         width: 10rem;
+//     }
+//     &__item-3:hover ::before{
+//         // @extend %upperbar;
+
+//         position: absolute;
+//         content: "";
+//         top: 0;
+//         height: 2px;
+//         background-color: $color-primary;
+
+//         width: 7.5rem;
+//         span{
+//             width: 0;
+//         }
+//     }
+//     &__item-4:hover ::before{
+//         @extend %upperbar;
+//         width: 5.4rem;
+//     }
+//     &__item-5:hover ::before{
+//         @extend %upperbar;
+//         width: 4rem;
+//     }
+    
+
+// }
+
+
+
+
+
+
+// //////////////////////////////////////////////////////////////////////////////////
+
+
+%upperbar{
+    position: absolute;
+    content: " ";
+    border-radius: 0 0 10px 10px;
+    top: 0;
+    height: 3px;
+    
+    background-color: $color-primary;
+}
+%lowerbar{
+    position: absolute;
+    content: " ";
+    border-radius:10px 10px 0 0;
+    bottom: 0;
+    height: 3px;
+   
+    background-color: $color-primary;
+}
+.navigation-sticky{
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     background-color: #fff;
-    padding: .6rem;
+    padding: 1.5rem 1rem;
     width: 87%;
     margin-top: 1.2rem;
     left: 4.49%;
     top: 0.15%;
-    justify-content: space-between;
+    
     align-items: center;
     border-radius: 100px;
+    border: 1px solid #EAEAEA;
     @media only screen and (max-width:$bp-small){
         padding: 0;
         width: 100%;
@@ -26,6 +177,7 @@
       
 }
     &__logo{
+        flex: 0 0 20%;
         margin-left: 3rem;
         @media only screen and (max-width:$bp-small){
 
@@ -50,7 +202,15 @@
 
     }
     &__item{
-        padding:0 5rem;
+        padding:0 3rem;
+       
+        &__span{
+            display: flex;
+            flex-direction: row;
+            &--text{
+                padding: 0 .5rem;
+            }
+        }
         @media only screen and (max-width:$bp-small){
 
             padding:0 1rem;
@@ -75,5 +235,65 @@
             margin-right: 5rem;
   }
     }
+    &__navigator{
+       flex:0 0 40%;
+        
+    }
+    &__button{
+       flex: 0 0 40%;
+       position: absolute;
+       right: .5rem;
+      
+    }
+   
+    &__item-1::before{
+        @extend %upperbar;
+        width: 4rem;
+    }
+    &__item-2:hover ::before{
+        @extend %upperbar;
+        width: 10rem;
+    }
+    &__item-3:hover ::before{
+        @extend %upperbar;
+
+        width: 7.5rem;
+    }
+    &__item-4:hover ::before{
+        @extend %upperbar;
+        width: 5.4rem;
+    }
+    &__item-5:hover ::before{
+        @extend %upperbar;
+        width: 4rem;
+    }
+
+
+    
+    &__item-1::after{
+        @extend %lowerbar;
+        left: 33.5rem;
+        width: 4rem;
+    }
+    // &__item-2:hover ::after{
+    //     @extend %lowerbar;
+    //     left: 33.5rem;
+    //     width: 10rem;
+    // }
+    // &__item-3:hover ::after{
+    //     @extend %lowerbar;
+
+    //     width: 7.5rem;
+    // }
+    // &__item-4:hover ::after{
+    //     @extend %lowerbar;
+    //     width: 5.4rem;
+    // }
+    // &__item-5:hover ::after{
+    //     @extend %lowerbar;
+    //     width: 4rem;
+    // }
+    
+    
 
 }

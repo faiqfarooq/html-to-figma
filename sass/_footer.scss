@@ -7,7 +7,7 @@ align-items: center;
     width: 100%;
     position: relative;
     @media only screen and (max-width:$bp-small){
-   
+        height: 20rem;
         align-items: flex-end;
     }
     &__text{
@@ -24,6 +24,7 @@ align-items: center;
 color: #828282;
 @media only screen and (max-width:$bp-small){
  margin-bottom: 2rem;
+ font-size: 2.5rem;
 }
     }
     &__img{
@@ -35,6 +36,8 @@ color: #828282;
         @media only screen and (max-width:$bp-small){
             top: 2rem;
          left: 50%;
+         height: 55%;
+         width: 50%;
          transform: translateX(-50%);
         }
     }

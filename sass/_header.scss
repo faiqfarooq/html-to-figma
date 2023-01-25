@@ -1,38 +1,42 @@
-.header{
-    height: 90vh;
+.header{ 
+    height: 100%;
     width: 100%;
     display: flex;
-    position: relative;
-    @media only screen and (max-width:$bp-small){
+      
+    @media only screen and (max-width:$bp-smallest){
 
-              background-image: url(../img/Home_img.png);
-              background-size: cover;
-              background-repeat: no-repeat;
+            //   background-image: url(../img/Home_img.png);
+            //   background-size:cover;
+            //   background-repeat: no-repeat;
               display: flex;
               flex-direction: row;
               justify-content: center;
               width: 100%;
+            
     }
     @media only screen and (max-width:$bp-smallest){
-        height: 80vh;
+        height: 60%;
           
     }
     &__pic-side{
-        width: 87.91%;
-        height: 100%;
-position: relative;
-        background-image: url(../img/Home_img.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+        position: relative;
         
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        @media only screen and (max-width:$bp-small){
+        &--img{
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -100;
+        }
+        @media only screen and (max-width:$bp-smallest){
 
-            background-image: none;
+            height: 60%;
   }
         
     //    &--background-img{
@@ -44,10 +48,11 @@ position: relative;
     // }
     }
     &__desc{
+        width: 100%;
         margin-top: 18.9rem;
         margin-left: 12rem;
         @media only screen and (max-width:$bp-smallest){
-            margin-top: 15rem;
+            margin-top: 5rem;
             margin-left: 2rem;
           
         }
@@ -96,17 +101,26 @@ position: relative;
         text-align: justify;
   text-justify: inter-word;
         @media only screen and (max-width:$bp-small){
-
+           
             font-weight: 400;
             font-size: 1.6rem;
   }
   @media only screen and (max-width:$bp-smallest){
     font-weight: 400;
     font-size: 1.6rem;
-    width: 100%;
+    width: 66%;
           
   }
     }
+    &__header-mouse{
+        position: absolute;
+        bottom: 2.5rem;
+        left: 59%;
+        @media only screen and (max-width:$bp-smallest){
+          visibility: hidden;
+          display: none;
+          }
+       }
     &__heading-check{
 
         font-family: $font-primary;
@@ -115,34 +129,46 @@ position: relative;
         line-height: 3rem;
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: 1.5rem;
         width: 13rem;
         text-align: end;
         // display: flex;
         // align-items: flex-end;
         // text-align: right;
 
-color: #DADADA;
+    color: #DADADA;
 
-@media only screen and (max-width:$bp-small){
-    display: none;
-      
-}
+       @media only screen and (max-width:$bp-smallest){
+    
+      display: none;
+        }
     }
     &__btn{
+        display: flex;
         &--secondary{
             margin-right: 3rem;
+            @media only screen and (max-width:$bp-smallest){
+                margin-right: 0;
+                margin-bottom: 1rem;
+               
+             }
+        }
+        @media only screen and (max-width:$bp-smallest){
+           flex-direction: column;
+           align-items: center;
+           margin-right: 30rem;
+          
         }
        
     }
     &__contant-side{
-        width: 12.09%;
-        height: 100%;
+        flex: 0 0 12%;
+        width: 100%;
         display: flex;
         position: relative;
-        @media only screen and (max-width:$bp-small){
-         display: none;
-           
+        @media only screen and (max-width:$bp-smallest){
+      
+           display: none;
   }
         // transform: rotate(90deg);
 
@@ -153,7 +179,7 @@ color: #DADADA;
             line-height: 5rem;
             // margin-top: 20rem;
             bottom: 0;
-            left: 2rem;
+            left: 2.5rem;
             color: #E2E2E2;
             font-family: $font-primary;
             text-align: right;
@@ -163,6 +189,7 @@ color: #DADADA;
         }
         &__arrow{
             position: absolute;
+            
             // margin-top: 38rem;
             bottom: 0;
         }
@@ -172,3 +199,9 @@ color: #DADADA;
    
    
 }
+
+
+
+
+
+
