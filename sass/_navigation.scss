@@ -130,31 +130,31 @@
 // //////////////////////////////////////////////////////////////////////////////////
 
 
-%upperbar{
-    position: absolute;
-    content: " ";
-    border-radius: 0 0 10px 10px;
-    top: 0;
-    height: 3px;
+// %upperbar{
+//     position: absolute;
+//     content: " ";
+//     border-radius: 0 0 10px 10px;
+//     top: 0;
+//     height: 3px;
     
-    background-color: $color-primary;
-}
-%lowerbar{
-    position: absolute;
-    content: " ";
-    border-radius:10px 10px 0 0;
-    bottom: 0;
-    height: 3px;
-   
-    background-color: $color-primary;
-}
+//     background-color: $color-primary;
+// }
+// %lowerbar{
+//     position: absolute;
+//     content: " ";
+//     border-radius:10px 10px 0 0;
+//     bottom: 0;
+//     height: 3px;
+//    left: 0;
+//     background-color: $color-primary;
+// }
 .navigation-sticky{
     display: flex;
     flex-direction: row;
     position: fixed;
     z-index: 1000;
     background-color: #fff;
-    padding: 1.5rem 1rem;
+    padding: 0 1rem;
     width: 87%;
     margin-top: 1.2rem;
     left: 4.49%;
@@ -164,13 +164,7 @@
     border-radius: 100px;
     border: 1px solid #EAEAEA;
     @media only screen and (max-width:$bp-small){
-        padding: 0;
-        width: 100%;
-        border-radius: 0;
-        justify-content: space-evenly;
-        left: 0;
-        height: 7rem;
-        top: 0.15%;
+        
 }
 @media only screen and (max-width:$bp-smallest){
     display: none;
@@ -202,7 +196,8 @@
 
     }
     &__item{
-        padding:0 3rem;
+        padding:2.4rem 3rem;
+        position: relative;
        
         &__span{
             display: flex;
@@ -215,6 +210,7 @@
 
             padding:0 1rem;
   }
+ 
     
         a{
             text-decoration: none;
@@ -228,7 +224,7 @@
         }
     }
     &__btn{
-        padding: 1.6rem 3rem !important;
+        padding: 1.8rem 3rem !important;
        
         @media only screen and (max-width:$bp-small){
 
@@ -247,34 +243,58 @@
     }
    
     &__item-1::before{
-        @extend %upperbar;
+     position: absolute;
+    content: " ";
+    border-radius: 0 0 10px 10px;
+    top: 0;
+    
+    height: 4px;
+    
+    background-color: $color-primary;
+       
         width: 4rem;
     }
-    &__item-2:hover ::before{
-        @extend %upperbar;
-        width: 10rem;
-    }
-    &__item-3:hover ::before{
-        @extend %upperbar;
+    &__item-1::after{
+        position: absolute;
+       content: " ";
+       border-radius:  10px 10px 0 0;
+       bottom: 0;
+       left: 31%;
+       
+       height: 4px;
+       
+       background-color: $color-primary;
+          
+           width: 4rem;
+       }
 
-        width: 7.5rem;
-    }
-    &__item-4:hover ::before{
-        @extend %upperbar;
-        width: 5.4rem;
-    }
-    &__item-5:hover ::before{
-        @extend %upperbar;
-        width: 4rem;
-    }
+
+
+    // &__item-2:hover ::before{
+    //     @extend %upperbar;
+    //     width: 10rem;
+    // }
+    // &__item-3:hover ::before{
+    //     @extend %upperbar;
+
+    //     width: 7.5rem;
+    // }
+    // &__item-4:hover ::before{
+    //     @extend %upperbar;
+    //     width: 5.4rem;
+    // }
+    // &__item-5:hover ::before{
+    //     @extend %upperbar;
+    //     width: 4rem;
+    // }
 
 
     
-    &__item-1::after{
-        @extend %lowerbar;
-        left: 33.5rem;
-        width: 4rem;
-    }
+    // &__item-1::after{
+    //     @extend %lowerbar;
+       
+    //     width: 4rem;
+    // }
     // &__item-2:hover ::after{
     //     @extend %lowerbar;
     //     left: 33.5rem;

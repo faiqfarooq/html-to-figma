@@ -256,29 +256,13 @@ body {
   .secondary__btn:active {
     transform: translateY(0.5rem); }
 
-.navigation-sticky__item-1::before, .navigation-sticky__item-2:hover ::before, .navigation-sticky__item-3:hover ::before, .navigation-sticky__item-4:hover ::before, .navigation-sticky__item-5:hover ::before {
-  position: absolute;
-  content: " ";
-  border-radius: 0 0 10px 10px;
-  top: 0;
-  height: 3px;
-  background-color: #FF6753; }
-
-.navigation-sticky__item-1::after {
-  position: absolute;
-  content: " ";
-  border-radius: 10px 10px 0 0;
-  bottom: 0;
-  height: 3px;
-  background-color: #FF6753; }
-
 .navigation-sticky {
   display: flex;
   flex-direction: row;
   position: fixed;
   z-index: 1000;
   background-color: #fff;
-  padding: 1.5rem 1rem;
+  padding: 0 1rem;
   width: 87%;
   margin-top: 1.2rem;
   left: 4.49%;
@@ -286,15 +270,6 @@ body {
   align-items: center;
   border-radius: 100px;
   border: 1px solid #EAEAEA; }
-  @media only screen and (max-width: 49.129rem) {
-    .navigation-sticky {
-      padding: 0;
-      width: 100%;
-      border-radius: 0;
-      justify-content: space-evenly;
-      left: 0;
-      height: 7rem;
-      top: 0.15%; } }
   @media only screen and (max-width: 31.25rem) {
     .navigation-sticky {
       display: none; } }
@@ -313,7 +288,8 @@ body {
     display: flex;
     flex-direction: row; }
   .navigation-sticky__item {
-    padding: 0 3rem; }
+    padding: 2.4rem 3rem;
+    position: relative; }
     .navigation-sticky__item__span {
       display: flex;
       flex-direction: row; }
@@ -331,7 +307,7 @@ body {
       line-height: 1.6rem;
       color: #4F4F4F; }
   .navigation-sticky__btn {
-    padding: 1.6rem 3rem !important; }
+    padding: 1.8rem 3rem !important; }
     @media only screen and (max-width: 49.129rem) {
       .navigation-sticky__btn {
         margin-right: 5rem; } }
@@ -342,17 +318,21 @@ body {
     position: absolute;
     right: .5rem; }
   .navigation-sticky__item-1::before {
-    width: 4rem; }
-  .navigation-sticky__item-2:hover ::before {
-    width: 10rem; }
-  .navigation-sticky__item-3:hover ::before {
-    width: 7.5rem; }
-  .navigation-sticky__item-4:hover ::before {
-    width: 5.4rem; }
-  .navigation-sticky__item-5:hover ::before {
+    position: absolute;
+    content: " ";
+    border-radius: 0 0 10px 10px;
+    top: 0;
+    height: 4px;
+    background-color: #FF6753;
     width: 4rem; }
   .navigation-sticky__item-1::after {
-    left: 33.5rem;
+    position: absolute;
+    content: " ";
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    left: 31%;
+    height: 4px;
+    background-color: #FF6753;
     width: 4rem; }
 
 .header {
