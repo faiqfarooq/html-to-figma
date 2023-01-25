@@ -277,12 +277,9 @@ body {
     flex: 0 0 20%;
     margin-left: 3rem; }
     @media only screen and (max-width: 49.129rem) {
-      .navigation-sticky__logo {
-        margin-left: 5rem; } }
-    @media only screen and (max-width: 49.129rem) {
       .navigation-sticky__logo--img {
-        height: 10rem;
-        width: 20rem; } }
+        height: auto;
+        width: 100%; } }
   .navigation-sticky__list {
     list-style: none;
     display: flex;
@@ -290,14 +287,14 @@ body {
   .navigation-sticky__item {
     padding: 2.4rem 3rem;
     position: relative; }
+    @media only screen and (max-width: 49.129rem) {
+      .navigation-sticky__item {
+        padding: 2.4rem 2.5rem; } }
     .navigation-sticky__item__span {
       display: flex;
       flex-direction: row; }
       .navigation-sticky__item__span--text {
         padding: 0 .5rem; }
-    @media only screen and (max-width: 49.129rem) {
-      .navigation-sticky__item {
-        padding: 0 1rem; } }
     .navigation-sticky__item a {
       text-decoration: none;
       font-family: "TT Hoves", sans-serif;
@@ -308,9 +305,6 @@ body {
       color: #4F4F4F; }
   .navigation-sticky__btn {
     padding: 1.8rem 3rem !important; }
-    @media only screen and (max-width: 49.129rem) {
-      .navigation-sticky__btn {
-        margin-right: 5rem; } }
   .navigation-sticky__navigator {
     flex: 0 0 40%; }
   .navigation-sticky__button {
